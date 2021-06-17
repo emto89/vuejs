@@ -1,5 +1,7 @@
 <template>
-  <header-component />
+  <div>
+    <header-component />
+  </div>
 </template>
 
 <script>
