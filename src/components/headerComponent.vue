@@ -31,7 +31,7 @@
           v-for="item in items"
           :key="item.title"
           link
-        >
+         :to="item.url">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -49,7 +49,6 @@
     > 
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon @click="drawer = !drawer"  ></v-app-bar-nav-icon>
-
       <v-toolbar-title></v-toolbar-title>
     </v-app-bar>
 
@@ -61,17 +60,17 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'headerComponent',
 
     data: () => ({
       drawer: null,
        items: [
-          { title: 'INICIO', icon: 'mdi-view-dashboard' },
-          { title: 'SERVICIOS', icon: 'mdi-image' },
-          { title: 'NUESTRO EQUIPO', icon: 'mdi-help-box' },
-          { title: 'PORTAFOLIO', icon: 'mdi-help-box' },
-          { title: 'CONTÁCTO', icon: 'mdi-help-box' },
-          { title: 'TÉRMINOS Y CONDICIONES', icon: 'mdi-help-box' },
+          { title: 'INICIO', icon: 'mdi-view-dashboard', url:'home' },
+          { title: 'SERVICIOS', icon: 'mdi-image', url:'servicios' },
+          { title: 'NUESTRO EQUIPO', icon: 'mdi-help-box', url:'nuestroequipo' },
+          { title: 'PORTAFOLIO', icon: 'mdi-help-box', url:'portafolio' },
+          { title: 'CONTÁCTO', icon: 'mdi-help-box', url:'contacto' },
+          { title: 'TÉRMINOS Y CONDICIONES', icon: 'mdi-help-box', url:'terminos' },
         ],
         right: null,
       }),

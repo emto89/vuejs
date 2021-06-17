@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <header-component />
 </template>
+
+<script>
+  import headerComponent from '../components/headerComponent'
+
+  export default {
+    name: 'Home',
+
+    components: {
+      headerComponent,
+    },
+  }
+</script>

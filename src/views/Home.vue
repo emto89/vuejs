@@ -1,15 +1,15 @@
 <template>
-  <hello-world />
+  <header-component />
 </template>
 
 <script>
-  import HelloWorld from '../components/HelloWorld'
+  import headerComponent from '../components/headerComponent'
 
   export default {
-    name: 'Home',
+    name: 'Login',
 
     components: {
-      HelloWorld,
+      headerComponent,
     },
   }
 </script>
